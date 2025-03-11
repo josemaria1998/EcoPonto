@@ -10,7 +10,8 @@ import Login from "./src/screen/login";
 import Consient from "./src/screen/consient";
 import pontoColeta from "./src/screen/pontoColeta";
 
-import { MaterialCommunityIcons } from "react-native-vector-icons";
+//import { MaterialCommunityIcons } from "react-native-vector-icons";
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -37,12 +38,12 @@ const BottomTabs = () => (
         ),
       }}
     />
-        <Tab.Screen
+    <Tab.Screen
       name="consietTab"
       component={Consient}
       options={{
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="arvo" color={color} size={size} />
+          <MaterialCommunityIcons name="tree" color={color} size={size} />
         ),
       }}
     />
@@ -51,7 +52,7 @@ const BottomTabs = () => (
       component={pontoColeta}
       options={{
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="login" color={color} size={size} />
+          <MaterialCommunityIcons name="map-marker" color={color} size={size} />
         ),
       }}
     />
